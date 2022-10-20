@@ -1,0 +1,100 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --gutter: 2rem;
+}
+
+/* COMMONS */
+html {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    text-align: center;
+    background-color: #f5f5f1;
+}
+
+/* HEADER */
+header {
+    padding: 3.5rem 0;
+}
+
+.container-small {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* MAIN */
+main {
+    padding-bottom: 3.5rem;
+}
+
+img {
+    width: 100%;
+}
+
+h1 {
+    font-size: 1.5rem;
+    padding-bottom: 2rem;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: var(--gutter);
+}
+
+.card {
+    width: 100%;
+    padding-bottom: 2rem;
+    background-color: white;
+}
+
+.card h3 {
+    font-family: 'Marck Script', cursive;
+    font-size: 1.5rem;
+    margin: 1rem 0;
+}
+
+@media screen and (min-width: 576px) {
+    /* HEADER */
+    .container-small {
+        width: 65%;
+    }
+
+    /* MAIN */
+    .card {
+        width: calc(100% / 2 - var(--gutter) / 2);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    /* HEADER */
+    .container-small {
+        width: 45%;
+    }
+
+    /* MAIN */
+    .card {
+        width: calc(100% / 3 - (var(--gutter) * 2) / 3);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* MAIN */
+    .container {
+        width: 65%;
+    }
+}
